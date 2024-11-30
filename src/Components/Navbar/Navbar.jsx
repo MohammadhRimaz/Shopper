@@ -4,10 +4,12 @@ import logo from "../Assets/logo.png";
 import cart_icon from "../Assets/cart_icon.png";
 import { Link } from "react-router-dom";
 import { ShopContext } from "../../Context/ShopContext";
+import { AuthContext } from "../../Context/AuthContext";
 
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const { getTotalCartItems } = useContext(ShopContext);
+  const { isAuthenticated, user, logout } = useContext(AuthContext);
 
   return (
     <div className="navbar">
@@ -58,9 +60,17 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link style={{ textDecoration: "none" }} to="/login">
-          <button>Login</button>
-        </Link>
+        {isAuthenticated ? (
+          <div>
+            <span>Welcome, {user.name}</span>
+            <button onClick={logout}>Logout</button>
+          </div>
+        ) : (
+          <Link style={{ textDecoration: "none" }} to="/login">
+            <button>Login</button>
+          </Link>
+        )}
+
         <Link style={{ textDecoration: "none" }} to="/cart">
           <img src={cart_icon} alt="" />
         </Link>
