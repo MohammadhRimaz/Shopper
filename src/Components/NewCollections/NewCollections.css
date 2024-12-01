@@ -10,6 +10,7 @@
     color: #171717;
     font-size: 50px;
     font-weight: 600;
+    text-align: center;
 }
 
 .newcollections hr {
@@ -21,7 +22,27 @@
 
 .collections {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
     gap: 20px;
+}
+
+@media (max-width:1280px) {
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .newcollections h1 {
+        font-size: 30px;
+    }
+
+    .collections {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }

@@ -61,3 +61,14 @@
     height: 3px;
     background: #c7c7c7;
 }
+
+@media (max-width: 768px) {
+    .footer-links {
+        font-size: 15px;
+        gap: 15px;
+    }
+
+    .footer-copyright {
+        font-size: 15px;
+    }
+}

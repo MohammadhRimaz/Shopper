@@ -60,12 +60,6 @@ const LoginSignup = () => {
             </>
           )}
         </p>
-        {!isLoginMode && (
-          <div className="loginsignup-agree">
-            <input type="checkbox" required />
-            <p>By continuing, I agree to the terms & privacy policy</p>
-          </div>
-        )}
       </div>
     </div>
   );

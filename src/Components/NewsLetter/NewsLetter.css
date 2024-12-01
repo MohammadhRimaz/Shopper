@@ -1,6 +1,6 @@
 .newsletter {
-    width: 65%;
-    height: 40vh;
+    /* width: 65%;
+    height: 40vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,12 +15,14 @@
 .newsletter h1 {
     color: #454545;
     font-size: 55px;
-    font-family: 600;
+    font-weight: 600;
+    text-align: center;
 }
 
 .newsletter p {
     color: #454545;
     font-size: 20px;
+    text-align: center;
 }
 
 .newsletter div {
@@ -35,7 +37,7 @@
 }
 
 .newsletter input {
-    width: 500px;
+    width: 410px;
     margin-left: 30px;
     border: none;
     outline: none;
@@ -52,4 +54,29 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .newsletter h1 {
+        font-size: 35px;
+    }
+
+    .newsletter p {
+        font-size: 16px;
+    }
+
+    .newsletter div {
+        width: 350px;
+    }
+
+    .newsletter input {
+        width: 250px;
+        margin-left: 0;
+    }
+
+    .newsletter div button {
+        width: 150px;
+        height: 50px;
+        font-size: 14px;
+    }
 }

@@ -1,10 +1,9 @@
 .offers {
-    width: 65%;
-    height: 60vh;
     display: flex;
-    margin: auto;
-    padding: 0px 140px;
-    margin-bottom: 150px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
     background: linear-gradient(180deg, #fde1ff 0%, #e1ffea 60%);
 }
 
@@ -41,9 +40,33 @@
 }
 
 .offers-right {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 50px;
+}
+
+@media (max-width:768px) {
+    .offers {
+        padding: 30px;
+    }
+
+    .offers-left h1 {
+        font-size: 50px;
+    }
+
+    .offers-left p {
+        font-size: 18px;
+    }
+
+    .offers-left button {
+        width: 150px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .offers-right-img {
+        width: 240px;
+        height: 320px;
+    }
 }
