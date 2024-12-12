@@ -14,6 +14,9 @@ This project is a modern e-commerce textile website built entirely with React. I
 - **Authentication**: Signup and Login functionality (frontend only).
 - **Great User Experience**: Attractive and intuitive design for easy navigation.
 
+## Live Site
+Link: https://shopper-red.vercel.app   
+
 ## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Follow these steps to get started:
