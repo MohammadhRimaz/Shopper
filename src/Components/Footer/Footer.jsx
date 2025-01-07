@@ -7,6 +7,8 @@ import whatsapp_icon from "../Assets/whatsapp_icon.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer">
       <Link className="footer-logo" style={{ textDecoration: "none" }} to="/">
@@ -33,7 +35,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright">
         <hr />
-        <p>© All rights reserved 2025</p>
+        <p>© {currentYear} Shopper. All rights reserved.</p>
       </div>
     </div>
   );
