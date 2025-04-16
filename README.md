@@ -35,16 +35,22 @@ Make sure you have the following installed on your system:
    git clone https:github.com/MohammadhRimaz/Shopper.git
    ```
 2. Navigate to the project directory:
+   ```bash
    cd e-commerce-textile
-3. Install dependencies:
+   ```
+4. Install dependencies:
+   ```bash
    npm install react-router-dom
    npm install react-scripts
+   ```
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+```bash 
+npm start
+```
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
